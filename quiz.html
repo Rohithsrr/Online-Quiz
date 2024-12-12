@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Platform</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div id="timer">Time Remaining: <span id="time-left">30</span> seconds</div>
+        <div id="question-container">
+            <p id="question"></p>
+            <div id="options">
+                <!-- Options will be populated by JavaScript -->
+            </div>
+        </div>
+        <div id="navigation-bar">
+            <!-- Navigation buttons for each question -->
+        </div>
+        <button id="prev-btn" disabled>Previous</button>
+        <button id="next-btn" disabled>Next</button>
+        <div id="review-btn-container">
+            <button id="review-btn" style="display:none;">Review Answers</button>
+        </div>
+    </div>
+
+    <div id="review-container" style="display:none;">
+        <h2>Review Your Answers</h2>
+        <ul id="review-list"></ul>
+        <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
